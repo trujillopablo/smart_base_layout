@@ -10,10 +10,3 @@ PRODUCT_COPY_FILES +=
 PRODUCT_NAME := smtt_simple
 PRODUCT_DEVICE := SmartDevice
 PRODUCT_MODEL := Smartmatic example template, first attempt.
-
-
-
- 
-
-
-
