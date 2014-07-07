@@ -27,4 +27,4 @@
 # Copied from build/target/product/AndroidProducts.mk
 
 PRODUCT_MAKEFILES += \
-  $(LOCAL_DIR)/SmartDevice/smtt_sample.mk
+  $(LOCAL_DIR)/SmartDevice/smtt_simple.mk
