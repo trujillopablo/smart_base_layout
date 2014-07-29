@@ -10,8 +10,6 @@ PRODUCT_MANUFACTURER := smartmatic
 
 DEVICE_PACKAGE_OVERLAYS :=
 
-PRODUCT_PACKAGES  +=
-
 PRODUCT_COPY_FILES += \
 	device/boundary/nitrogen6x/required_hardware.xml:system/etc/permissions/required_hardware.xml \
 	device/boundary/nitrogen6x/init.rc:root/init.freescale.rc \
@@ -43,13 +41,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS := device/boundary/nitrogen6x/overlay
 
-
-PRODUCT_PACKAGES += uim-sysfs \
+PRODUCT_PACKAGES    += uim-sysfs \
         bt_sco_app \
         BluetoothSCOApp \
         TIInit_10.6.15.bts \
         TIInit_7.2.31.bts \
         TIInit_7.6.15.bts
+
+PRODUCT_PACKAGES += BasicTestApk \
+	FDroid
 
 PRODUCT_PACKAGES += \
 	wl1271-fw-2.bin \
@@ -57,6 +57,7 @@ PRODUCT_PACKAGES += \
 
 include device/boundary/openssh.mk
 
-PRODUCT_PACKAGES += ethernet
+PRODUCT_PACKAGES += ethernet \
+
 
 PRODUCT_MODEL := Smartmatic example template, second attempt. (From boundary base).
